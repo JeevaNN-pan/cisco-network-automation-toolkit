@@ -1,0 +1,18 @@
+# Device inventory for the Cisco Network Automation Toolkit.
+#
+# Designed to be tested against a free lab environment: GNS3, EVE-NG,
+# Cisco Packet Tracer (with its Python API), or ContainerLab running a
+# Cisco IOL/IOSv image. Replace host/device_type with your own lab
+# devices' management IPs.
+#
+# Credentials are never stored here - set NET_USERNAME / NET_PASSWORD /
+# NET_SECRET as environment variables (see .env.example).
+
+devices:
+  - name: lab-router-1
+    host: 192.168.100.1
+    device_type: cisco_ios
+
+  - name: lab-switch-1
+    host: 192.168.100.2
+    device_type: cisco_ios
